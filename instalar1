@@ -274,7 +274,7 @@ if __name__ == '__main__':
     main()
 EOM
 
-wget -O https://raw.githubusercontent.com/Alaminbd257/mypanel/main/sshaccount.sh
+wget https://raw.githubusercontent.com/Alaminbd257/mypanel/main/sshaccount.sh
 
 chmod +x /usr/local/sbin/ram.sh
 crontab -r
