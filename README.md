@@ -17,7 +17,8 @@ Para instalar el segundo menu adaptado ejecute el comando ( menuV2 )
 Para instalar el tercer menu adaptado formato ADM ejecute el comando ( menuV3
 Para instalar el cuarto menu adaptado formato ADM con utilitarios ejecute el comando ( menuV4 )
 Para restablecer el menu original ejecute el comando ( menuV1 )
-📖 Installation
+📖 Installation 👇🏻
+
 apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/Alaminbd257/mypanel/main/Plus; chmod 777 Plus; ./Plus
 
 SI NECESITAN REINSTALAR EL SCRIPTS PUEDEN EJECUTAR EL COMANDO: ( sshplus )
