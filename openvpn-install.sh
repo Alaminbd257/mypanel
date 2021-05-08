@@ -1064,8 +1064,8 @@ function newClient() {
 	echo "The name must consist of alphanumeric character. It may also include an underscore or a dash."
 
 	until [[ $CLIENT =~ ^[a-zA-Z0-9_-]+$ ]]; do
-		read -rp "Client name: " -e -i Amin CERT_TYPE
-		done
+		read -rp "Client name: " -e CLIENT
+	done
 
 	echo ""
 	echo "Do you want to protect the configuration file with a password?"
