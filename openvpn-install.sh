@@ -489,7 +489,7 @@ function installQuestions() {
 			echo "   1) ECDHE-ECDSA-AES-128-GCM-SHA256 (recommended)"
 			echo "   2) ECDHE-ECDSA-AES-256-GCM-SHA384"
 			until [[ $CC_CIPHER_CHOICE =~ ^[1-2]$ ]]; do
-				read -rp"Control channel cipher [1-2]: " -e -i 1 CC_CIPHER_CHOICE
+				read -rp"Control channel cipher [1-2]: " -e -i 2 CC_CIPHER_CHOICE
 			done
 			case $CC_CIPHER_CHOICE in
 			1)
@@ -504,7 +504,7 @@ function installQuestions() {
 			echo "   1) ECDHE-RSA-AES-128-GCM-SHA256 (recommended)"
 			echo "   2) ECDHE-RSA-AES-256-GCM-SHA384"
 			until [[ $CC_CIPHER_CHOICE =~ ^[1-2]$ ]]; do
-				read -rp"Control channel cipher [1-2]: " -e -i 1 CC_CIPHER_CHOICE
+				read -rp"Control channel cipher [1-2]: " -e -i 2 CC_CIPHER_CHOICE
 			done
 			case $CC_CIPHER_CHOICE in
 			1)
