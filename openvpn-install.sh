@@ -436,7 +436,7 @@ function installQuestions() {
 		echo "   1) ECDSA (recommended)"
 		echo "   2) RSA"
 		until [[ $CERT_TYPE =~ ^[1-2]$ ]]; do
-			read -rp"Certificate key type [1-2]: " -e -i 3 CERT_TYPE
+			read -rp"Certificate key type [1-2]: " -e -i 1 CERT_TYPE
 		done
 		case $CERT_TYPE in
 		1)
@@ -1064,8 +1064,8 @@ function newClient() {
 	echo "The name must consist of alphanumeric character. It may also include an underscore or a dash."
 
 	until [[ $CLIENT =~ ^[a-zA-Z0-9_-]+$ ]]; do
-		read -rp "Client name: " -e CLIENT
-	done
+		read -rp "Client name: " -e -i Amin CERT_TYPE
+		done
 
 	echo ""
 	echo "Do you want to protect the configuration file with a password?"
